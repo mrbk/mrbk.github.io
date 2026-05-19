@@ -55,19 +55,23 @@ window.open("https://arxiv.org/find/astro-ph/1/au:+boylan_kolchin/0/1/0/all/0/1"
 }
 function mbk_ads()
 {
-window.open("https://ui.adsabs.harvard.edu/search/q=%20author%3A%22boylan-kolchin%22&sort=date%20desc%2C%20bibcode%20desc")
+window.open("https://scixplorer.org/search?d=astrophysics&p=1&q=author%3A%22boylan-kolchin%22&sort=date+desc")
 }
 function mbk_adscites()
 {
-window.open("https://ui.adsabs.harvard.edu/search/q=%20author%3A%22boylan-kolchin%22&sort=citation_count%20desc%2C%20bibcode%20desc")
+window.open("https://scixplorer.org/search?d=astrophysics&p=1&q=author%3A%22boylan-kolchin%22&sort=citation_count+desc&sort=date+desc")
 }
 function mbk_inspire()
 {
 window.open("https://inspirehep.net/search?ln=en&ln=en&p=FIND+AUTHOR+BOYLAN-KOLCHIN&of=hb&action_search=Search&sf=&so=d&rm=&rg=100&sc=0")
 }
+function mbk_google()
+{
+window.open("https://scholar.google.com/citations?user=3cYdpzEAAAAJ&hl=en")
+}
 </script>
 
-</head>
+.0</head>
 
 <body>
 <div id="header-wrapper">
@@ -101,13 +105,15 @@ window.open("https://inspirehep.net/search?ln=en&ln=en&p=FIND+AUTHOR+BOYLAN-KOLC
   background-color:#FFFFFF;" >
 
   <form style="padding-top:10px;" >
-  <span style="font-weight:600; font-size:100%; color:#666666;" >My publications via: &nbsp; </span>
-  <input type=button class="button" value=" NASA ADS (chronological order) "
+  <span style="font-weight:600; font-size:100%; color:#666666; padding-bottom:10px;" >My publications
+  via: &nbsp; </span>
+  <input type=button class="button" value=" SciX (chronological order) "
   onClick="mbk_ads()" >
-  <input type=button class="button" value=" NASA ADS (citation order) "
+  <input type=button class="button" value=" SciX (citation order) "
   onClick="mbk_adscites()">
-  <input type=button class="button" value=" arXiv " onClick="mbk_arxiv()">
+  <input type=button class="button" value=" Google Scholar " onClick="mbk_google()">
   <input type=button class="button" value=" INSPIRE " onClick="mbk_inspire()">
+  <input type=button class="button" value=" arXiv " onClick="mbk_arxiv()">
   </form>
   <br />
   
@@ -2286,7 +2292,7 @@ window.open("https://inspirehep.net/search?ln=en&ln=en&p=FIND+AUTHOR+BOYLAN-KOLC
   <br />
   <h2></h2>
   <p style="padding-left:5px;">
-  <i>Last updated: 2026.05.15</i>
+  <i>Last updated: 2026.05.19</i>
   </p>
   </div>
   </div>
